@@ -1,5 +1,9 @@
 @charset "UTF_8";
 
+body {
+    background: url('../imagens/fundo\ da\ loja.jpg');
+}
+
 .container {
     width: 100%;
     max-width: 400px;
@@ -30,4 +34,34 @@ h1 {
 p {
     color:black;
     margin-bottom: 30px;
+}
+
+.links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link-card {
+    background-color: #6090e9;
+    text-decoration: none;
+    color: rgb(5, 5, 88);
+    padding: 12px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    position: relative;
+    box-shadow: 0px 8px 0px rgba(69, 83, 128, 0.281);
+}
+
+.link-card img {
+    width: 30px;
+    height: 30px;
+    margin-right: auto;
+}
+
+.link-card span {
+    flex-grow: 1;
+    margin-right: 30px;
 }
