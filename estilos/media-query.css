@@ -1,0 +1,47 @@
+@charset "UTTF-8";
+
+/* Typical Device Breakpoints
+-----------------------------
+Celular Telas : até 600px
+Tablet : 760px até 768px
+Desktop : 992px até 1200px  
+*/
+
+@media screen and (min-width: 768px) and(max-width: 992px) {
+    .logo-circle {
+        width: 80%vw;
+    }
+
+    .logo-circle {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    .logo-circle {
+        float: right;
+        width: 70%;
+    }
+}
+
+@media  screen and (min-width: 992px) {
+    .container {
+        width: 950px;
+        height: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+    /*
+    .logo-circle {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    .logo-circle {
+        float: right;
+        width: 50%;
+    }
+    .logo-circle {
+    font-size: 1.2em;
+}
+}

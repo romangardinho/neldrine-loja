@@ -36,6 +36,17 @@ p {
     margin-bottom: 30px;
 }
 
+.texto-sobreposto {
+    position: absolute;
+    top: 2px;
+    color: white;
+    font-size: 15px;
+}
+
+.links-section > a {
+    color: white;
+}
+
 .links-section {
     display: flex;
     flex-direction: column;
@@ -43,16 +54,16 @@ p {
 }
 
 .link-card {
-    background-color: #6090e9;
+    background-color: rgb(14, 7, 49);
     text-decoration: none;
     color: rgb(5, 5, 88);
-    padding: 12px 20px;
+    padding: 20px 20px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     font-weight: bold;
     position: relative;
-    box-shadow: 0px 8px 0px rgba(69, 83, 128, 0.281);
+    box-shadow: 0px 8px 0px  rgba(1, 1, 37, 0.13);
 }
 
 .link-card img {
