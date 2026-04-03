@@ -1,7 +1,7 @@
 @charset "UTF_8";
 
 body {
-    background: url('../imagens/fundo\ da\ loja.jpg');
+    background: url('../imagens/img\ 4.jpg')
 }
 
 .container {
@@ -29,18 +29,19 @@ body {
 h1 {
     font-size: 1.5em;
     margin-bottom: 5px;
+    color: black;
 }
 
 p {
-    color:black;
+    color: black;
     margin-bottom: 30px;
 }
 
 .texto-sobreposto {
     position: absolute;
-    top: 2px;
-    color: white;
-    font-size: 15px;
+    left: 40%;
+    right: 40px;
+    top: 0%;
 }
 
 .links-section > a {
