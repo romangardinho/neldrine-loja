@@ -19,7 +19,7 @@
         </header>
     </div>
     <main class="links-section">
-        <a href="https://wa.me/5567984463920" class="link-card" target="_blank">
+        <a href="https://wa.me/5567992690061" class="link-card" target="_blank">
         <img src="imagens/logo whatsapp.jpg" alt="Whatsapp">
         <span class="texto-sobreposto">
              Fale comigo &#128071;
@@ -27,12 +27,12 @@
         <span>Whatsapp</span>
         </a>
 
-        <a href="#" class="link-card" target="_blank">
+        <a href="https://facebook.com/keyous" class="link-card" target="_blank">
             <img src="imagens/logo-facebook.jpg" alt="Facebook">
             <span>Facebook</span>
         </a>
 
-        <a href="#" class="link-card" target="_blank">
+        <a href="https://shopee.com.br/geneljeanjacques" class="link-card" target="_blank">
             <div class="logo-container">
                 <img src="imagens/logo Shopee.png" alt="Shopee">
                 <span class="texto-sobreposto">Compre pela shopee&#128071;</span>
@@ -47,7 +47,43 @@
             </div>
             <span>Neldrine - Loja</span>
         </a>
-        <footer>eemm</footer>
+        <footer>
+            <p>&copy; Roman Gardinho</p>
+        </footer>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+
+<script>
+    // Cole aqui o seu link ajustado (com ?output=csv no final)
+    const csvUrl = " https://docs.google.com/spreadsheets/d/e/2PACX-1vQOvfHnwIswN0KaXu0FL52xtLzT1cSnaaMQQ6bBSWpAre1Sn3BD688pj7EMjjZd0gVT2BALtFQ5Cw28/pub?output=csv"; 
+
+    fetch(csvUrl)
+        .then(response => response.text())
+        .then(csvText => {
+            // O PapaParse converte o CSV para uma lista (JSON)
+            Papa.parse(csvText, {
+                header: true,
+                complete: function(results) {
+                    const container = document.querySelector(".container-produtos");
+                    container.innerHTML = ""; // Limpa o que estava lá
+
+                    // Cria um card para cada linha da planilha
+                    results.data.forEach(item => {
+                        if (item.NOME) { // Só cria se tiver nome
+                            container.innerHTML += `
+                                <div class="card-produto">
+                                    <img src="${item.LINK_IMAGEM}" alt="${item.NOME}">
+                                    <h3>${item.NOME}</h3>
+                                    <p>R$ ${item.PRECO}</p>
+                                    <a href="${item.LINK_WHATSAPP}" target="_blank">Eu quero!</a>
+                                </div>
+                            `;
+                        }
+                    });
+                }
+            });
+        });
+</script>
 </body>
 </html>

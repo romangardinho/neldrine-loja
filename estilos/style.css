@@ -80,3 +80,7 @@ p {
     flex-grow: 1;
     margin-right: 30px;
 }
+
+    footer {
+        text-align: center;
+    }
