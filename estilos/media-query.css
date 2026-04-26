@@ -16,11 +16,13 @@ Desktop : 992px até 1200px
         float: left;
         width: 30%;
         height: 100%;
+        justify-content: center;
     }
     .logo-circle {
         float: right;
         width: 70%;
     }
+
 }
 
 @media  screen and (min-width: 992px) {
@@ -29,6 +31,7 @@ Desktop : 992px até 1200px
         height: 300px;
         display: block;
         margin: 0 auto;
+        justify-content: center;
     }
 }
     /*
