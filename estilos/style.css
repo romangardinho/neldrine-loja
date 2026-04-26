@@ -1,7 +1,9 @@
 @charset "UTF_8";
 
 body {
-    background: url('../imagens/img\ 4.jpg')
+    background: linear-gradient(rgba(0, 0, 0, 0.103), rgba(0, 0, 0, 0.021)), url('../imagens/img\ 4.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
@@ -33,13 +35,14 @@ h1 {
 }
 
 p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
     margin-bottom: 30px;
 }
 
 .texto-sobreposto {
     position: absolute;
-    left: 40%;
+    left: 40% ;
     right: 40px;
     top: 0%;
 }
